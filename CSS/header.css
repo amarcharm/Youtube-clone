@@ -1,0 +1,179 @@
+.header {
+  height: 55px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  z-index: 100;
+
+}
+
+.left-section {
+  display:flex;
+  align-items: center;
+}
+
+.hamburger-menu {
+  height: 24px;
+  margin-left: 24px;
+  margin-right: 24px;
+  cursor: pointer;
+}
+
+.youtube-logo {
+  height: 20px;
+  cursor: pointer;
+}
+
+.middle-section {
+  flex: 1;
+  margin-left: 70px;
+  margin-right: 35px;
+  max-width: 650px;
+  display: flex;
+  align-items: center;
+}
+.search-bar {
+  height: 36px;
+  flex: 1;
+  padding-left: 10px;
+  font-size: 16px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(118, 116, 116);
+  border-top-left-radius: 24px;
+  border-bottom-left-radius: 24px;
+  box-shadow: inset 1px 2px 3px rgba(160, 158, 158, 0.05);
+  width: 0;
+
+
+.search-bar::placeholder {
+  font-family: Roboto, Arial;
+  font-size: 16px;
+}  
+
+}
+.search-button {
+  height: 40px;
+  width: 80px;
+  background-color: rgb(240, 240, 240);
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(191, 190, 190);
+  margin-left: -1px;
+  margin-right: 10px;
+  border-top-right-radius: 24px;
+  border-bottom-right-radius: 24px;
+  cursor: pointer;
+  
+
+}
+
+.search-icon {
+  height: 25px;
+  margin-top: 4px;
+  background-color: rgb(240, 240, 240);
+
+}
+.mic-button {
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(248, 248, 248);
+  cursor: pointer;
+
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.mic-icon {
+  height: 24px;
+  cursor: pointer;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+  width: 220px;
+  justify-content: space-evenly;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.create-button {
+  height: 40px;
+  width: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: Roboto, Arial;
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 20px;
+  border-color: rgb(191, 190, 190);
+  border-width: 0px;
+  background-color: rgb(240, 240, 240);
+  cursor: pointer;
+}
+
+.plus {
+  height: 20px;
+  margin-left: 6px;
+  margin-right: 6px;
+}
+
+.notification-icon {
+  height: 24px;
+  cursor: pointer;
+}
+
+.notification-icon-container {
+  position: relative;
+}
+.notification-count {
+  position: absolute;
+  top: -3px;
+  right: -4px;
+  background-color: rgb(193, 8, 8);
+  font-family: Roboto, Arial;
+  color: white;
+  font-size: 11px;
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border-radius: 10px;
+}
+
+.my-profile {
+  height: 32px;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+
+.mic-button .tooltip {
+  position: absolute;
+  background-color: gray;
+  color: white;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  font-size: 12px;
+  opacity: 0;
+  bottom: -34px;
+  transition: opacity 0.15s;
+  white-space: nowrap;
+}
+.mic-button:hover .tooltip{
+  opacity: 1;
+}
